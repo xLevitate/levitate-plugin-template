@@ -33,6 +33,9 @@ dependencies {
 
     // Config
     implementation("de.exlll:configlib-yaml:4.5.0")
+
+    // Other libraries like Quill.
+    implementation(fileTree("libs/impl"))
 }
 
 tasks.shadowJar {
