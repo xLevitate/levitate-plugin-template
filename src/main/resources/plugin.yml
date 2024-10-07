@@ -1,0 +1,4 @@
+name: levitate-plugin-template
+version: '${version}'
+main: me.levitate.plugintemplate.PluginTemplate
+api-version: '1.21'
