@@ -1,17 +1,17 @@
 package me.levitate.plugintemplate;
 
+import lombok.Getter;
+import me.levitate.quill.api.QuillAPI;
 import org.bukkit.plugin.java.JavaPlugin;
 
+@Getter
 public final class PluginTemplate extends JavaPlugin {
+    private QuillAPI quill;
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+        quill = QuillAPI.builder()
+                .plugin(this)
+                .build();
     }
-
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
-    }
-
 }

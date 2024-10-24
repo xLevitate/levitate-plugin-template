@@ -1,4 +1,5 @@
 name: levitate-plugin-template
-version: '${version}'
+version: 1.0.0
 main: me.levitate.plugintemplate.PluginTemplate
 api-version: '1.21'
+depend: [Quill]
